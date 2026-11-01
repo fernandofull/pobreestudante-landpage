@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f1e29" />
+  <meta name="description" content="Pobre Estudante: uma plataforma gratuita para organizar seus estudos, acompanhar sua evolução e seguir firme até a aprovação. Contribua apenas se puder." />
+  <title>Pobre Estudante — Estudar bem não deveria custar caro.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root { --escuro:#10232c; --escuro2:#172f38; --creme:#f8f7f2; --texto:#172930; --suave:#607077; --linha:#dce3df; --verde:#b7ec94; --verde-escuro:#2d6145; --branco:#fff; --sombra:0 24px 68px rgba(16,35,44,.13) }
+    * { box-sizing:border-box }
+    html { scroll-behavior:smooth }
+    body { margin:0; background:var(--creme); color:var(--texto); font-family:'DM Sans',sans-serif; -webkit-font-smoothing:antialiased }
+    a { color:inherit; text-decoration:none }
+    button { font:inherit }
+    .container { width:min(1160px,calc(100% - 48px)); margin:0 auto }
+    .topo { background:var(--escuro); color:#fff }
+    .navegacao { min-height:84px; display:flex; align-items:center; justify-content:space-between; gap:24px; border-bottom:1px solid rgba(255,255,255,.12) }
+    .logo { display:flex; align-items:center; gap:12px; font-family:Manrope,sans-serif; font-size:19px; font-weight:800; letter-spacing:-.9px; white-space:nowrap }
+    .marca { width:36px; height:36px; display:grid; place-items:center; background:var(--verde); color:var(--escuro); border-radius:11px; font-size:20px; font-weight:800; transform:rotate(-6deg) }
+    .navegacao-centro { display:flex; align-items:center; gap:32px; color:#c9d4d4; font-size:14px }
+    .navegacao-centro a:hover,.rodape a:hover { color:var(--verde) }
+    .botao { display:inline-flex; justify-content:center; align-items:center; gap:10px; min-height:51px; border-radius:12px; padding:0 22px; font-size:14px; font-weight:700; border:1px solid transparent; transition:transform .2s,background .2s,box-shadow .2s; cursor:pointer }
+    .botao:hover { transform:translateY(-2px) }
+    .botao-verde { background:var(--verde); color:var(--escuro) }
+    .botao-verde:hover { background:#c8f7a9; box-shadow:0 12px 26px rgba(183,236,148,.13) }
+    .botao-contorno { color:white; border-color:#60747a; background:rgba(255,255,255,.03) }
+    .botao-contorno:hover { background:rgba(255,255,255,.1) }
+    .botao-escuro { background:var(--escuro); color:#fff }
+    .botao-claro { background:#fff; color:var(--escuro); border-color:#dae4df }
+    .seta { font-size:20px; line-height:1 }
+    .hero { padding:90px 0 102px; overflow:hidden }
+    .hero-grade { display:grid; grid-template-columns:.94fr 1.06fr; align-items:center; gap:58px }
+    .selo { display:inline-flex; gap:9px; align-items:center; border:1px solid #49655c; border-radius:100px; padding:9px 14px; background:#19382f; color:#d6f2d4; font-size:12px; font-weight:700; letter-spacing:.15px }
+    .ponto { width:7px; height:7px; background:var(--verde); border-radius:50% }
+    h1,h2,h3,p { margin-top:0 }
+    h1,h2,h3 { font-family:Manrope,sans-serif }
+    h1 { margin:27px 0 24px; font-size:clamp(42px,4.8vw,68px); letter-spacing:-3.8px; line-height:1.105; font-weight:800 }
+    h1 em { color:var(--verde); font-style:normal }
+    .hero-texto { color:#c5d2d0; font-size:17px; line-height:1.85; max-width:530px; margin-bottom:34px }
+    .hero-acoes { display:flex; flex-wrap:wrap; gap:12px }
+    .hero-nota { display:flex; align-items:center; gap:10px; color:#b7c7c4; margin-top:25px; font-size:12px }
+    .hero-nota svg { color:var(--verde) }
+    .visual { position:relative; padding:17px; background:#243d45; border:1px solid #49646a; border-radius:24px; box-shadow:0 28px 80px rgba(0,0,0,.2); transform:rotate(1.2deg) }
+    .visual::before { content:''; position:absolute; height:230px; width:230px; border-radius:50%; background:#8eda95; opacity:.1; filter:blur(50px); top:-60px; right:-60px; pointer-events:none }
+    .janela { overflow:hidden; background:#f8faf8; border-radius:15px; color:var(--texto); box-shadow:0 6px 20px rgba(0,0,0,.12) }
+    .janela-topo { height:42px; background:#fff; border-bottom:1px solid #e8eeea; display:flex; align-items:center; justify-content:space-between; padding:0 15px }
+    .bolinhas { display:flex; gap:5px }
+    .bolinhas i { height:7px; width:7px; background:#d8dfdb; border-radius:50%; display:block }
+    .url-falsa { color:#9baba5; font-size:10px }
+    .painel { display:grid; grid-template-columns:105px 1fr; min-height:330px }
+    .lateral { background:#f0f5f1; padding:21px 12px; border-right:1px solid #e4eae6 }
+    .lateral strong { font-size:10px; display:block; margin-bottom:22px; letter-spacing:-.4px }
+    .menu-falso { display:flex; align-items:center; gap:7px; font-size:8px; margin-bottom:17px; color:#819087 }
+    .menu-falso.ativo { background:#deeadf; color:#244b39; padding:8px; border-radius:7px; margin-left:-5px; font-weight:700 }
+    .mini-icone { width:10px; height:10px; border:1.5px solid currentColor; border-radius:3px; flex-shrink:0 }
+    .conteudo-painel { padding:23px 20px }
+    .cabecalho-painel { display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:17px }
+    .cabecalho-painel strong { font-family:Manrope,sans-serif; font-size:16px; letter-spacing:-.6px }
+    .cabecalho-painel span { font-size:9px; background:#e3f4dc; color:#3b6946; padding:6px 8px; border-radius:7px }
+    .metricas { display:grid; grid-template-columns:repeat(3,1fr); gap:9px }
+    .metrica { background:#fff; padding:13px 10px; border:1px solid #e9eeeb; border-radius:9px }
+    .metrica small { display:block; color:#8c9993; font-size:8px; margin-bottom:9px }
+    .metrica strong { font-size:19px; letter-spacing:-.9px; font-family:Manrope,sans-serif }
+    .metrica em { display:block; font-style:normal; color:#4b966a; font-size:8px; margin-top:6px }
+    .grafico { background:#fff; border:1px solid #e9eeeb; border-radius:10px; padding:14px 14px 10px; margin-top:12px }
+    .grafico-titulo { display:flex; align-items:center; justify-content:space-between; font-size:10px; font-weight:700 }
+    .grafico-titulo span { color:#8b9991; font-weight:400; font-size:8px }
+    .barras { display:flex; align-items:end; justify-content:space-between; gap:11px; height:94px; padding-top:14px; border-bottom:1px solid #e8eee9 }
+    .barra { flex:1; max-width:25px; background:#d5e6d3; border-radius:5px 5px 0 0 }
+    .barra.destaque { background:#84b99a }
+    .dias { display:flex; justify-content:space-between; margin-top:7px; font-size:8px; color:#9daa9f }
+    .flutuante { position:absolute; bottom:-26px; left:-30px; background:#fff; color:#223b31; box-shadow:var(--sombra); border:1px solid #e8efe7; padding:13px 18px; border-radius:13px; display:flex; align-items:center; gap:12px; transform:rotate(-3deg) }
+    .flutuante .circulo { border-radius:50%; display:grid; place-items:center; width:37px; height:37px; background:#e1f4d9; color:#416b4e; font-weight:800 }
+    .flutuante strong { font-size:12px; display:block }
+    .flutuante small { display:block; font-size:10px; color:#71837a; margin-top:3px }
+    .secao { padding:105px 0 }
+    .etiqueta { color:#4b7559; font-size:12px; font-weight:800; letter-spacing:2px; text-transform:uppercase; margin-bottom:18px }
+    .titulo-secao { font-size:clamp(32px,3.2vw,47px); line-height:1.18; letter-spacing:-2px; margin-bottom:17px }
+    .subtitulo { color:#66767a; line-height:1.75; max-width:650px; font-size:16px }
+    .recursos { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:39px }
+    .recurso { padding:34px 29px; background:#fff; border:1px solid var(--linha); border-radius:20px; min-height:248px; transition:transform .2s,box-shadow .2s }
+    .recurso:hover { transform:translateY(-4px); box-shadow:0 18px 35px rgba(20,50,42,.07) }
+    .recurso-icone { width:49px; height:49px; display:grid; place-items:center; background:#eaf4e5; border-radius:13px; margin-bottom:31px; color:#326342 }
+    .recurso-icone svg { width:24px; height:24px; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round }
+    .recurso h3 { font-size:18px; letter-spacing:-.7px; margin-bottom:12px }
+    .recurso p { font-size:14px; line-height:1.7; color:#74827e; margin:0 }
+    .manifesto { background:#e9eee5; padding:87px 0 }
+    .manifesto-grade { display:grid; grid-template-columns:1fr .88fr; gap:75px; align-items:center }
+    .manifesto h2 { font-size:clamp(34px,3.6vw,52px); line-height:1.17; letter-spacing:-2.5px; margin:0 }
+    .manifesto h2 em { color:#4d7c56; font-style:normal }
+    .manifesto p { color:#586b63; line-height:1.9; margin:0 0 15px }
+    .precos-centro { text-align:center }
+    .precos-centro .subtitulo { margin:0 auto }
+    .planos { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:21px; max-width:880px; margin:44px auto 0; text-align:left }
+    .plano { padding:35px; background:#fff; border:1px solid var(--linha); border-radius:22px; display:flex; flex-direction:column }
+    .plano.apoio { background:var(--escuro); color:white; border-color:var(--escuro); box-shadow:var(--sombra) }
+    .plano .tipo { font-size:15px; font-weight:700; margin-bottom:20px }
+    .plano .preco { font-size:46px; font-family:Manrope,sans-serif; font-weight:800; letter-spacing:-2.6px }
+    .plano .periodo { color:#89978f; font-size:13px }
+    .plano.apoio .periodo { color:#a8bab2 }
+    .plano .desc { color:#718078; font-size:14px; line-height:1.7; margin:15px 0 26px; min-height:50px }
+    .plano.apoio .desc { color:#b7c8c2 }
+    .plano ul { list-style:none; padding:0; margin:0 0 30px; flex:1 }
+    .plano li { display:flex; align-items:center; gap:10px; font-size:13px; padding:8px 0 }
+    .plano li::before { content:'✓'; font-weight:800; color:#4e8d60 }
+    .plano.apoio li::before { color:var(--verde) }
+    .plano .botao { width:100% }
+    .observacao { font-size:12px; color:#768780; text-align:center; margin-top:24px }
+    .chamada { background:var(--escuro); color:#fff; padding:80px 0 }
+    .chamada-conteudo { text-align:center }
+    .chamada h2 { font-size:clamp(34px,4vw,55px); letter-spacing:-2.5px; line-height:1.15; max-width:720px; margin:0 auto 20px }
+    .chamada h2 em { color:var(--verde); font-style:normal }
+    .chamada p { color:#bbcac7; font-size:16px; line-height:1.8; max-width:550px; margin:0 auto 30px }
+    .rodape { padding:29px 0; background:#0c1c23; color:#a8b9b5 }
+    .rodape-interno { display:flex; align-items:center; justify-content:space-between; gap:24px; font-size:12px }
+    .rodape .logo { color:#fff; font-size:14px }
+    .rodape .marca { width:28px; height:28px; font-size:16px; border-radius:8px }
+    .rodape-links { display:flex; gap:22px; flex-wrap:wrap }
+    .aviso { display:none; position:fixed; left:50%; bottom:24px; transform:translateX(-50%); padding:15px 20px; width:min(430px,calc(100% - 24px)); border-radius:12px; background:#fff; border:1px solid #c8d5cc; box-shadow:0 16px 40px #0002; z-index:10; color:#233a30; text-align:center; font-size:13px }
+    .aviso.mostrar { display:block }
+
+    /* Acesso gratuito é a ação principal; contribuição voluntária é informativa. */
+    .acesso-apoio { display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr); gap:22px; max-width:950px; margin:44px auto 0; text-align:left; align-items:stretch }
+    .acesso-cartao,.apoio-cartao { border-radius:22px; padding:36px; border:1px solid var(--linha); }
+    .acesso-cartao { background:#fff; display:flex; flex-direction:column; }
+    .acesso-cartao .preco { font-size:54px; font-family:Manrope,sans-serif; font-weight:800; letter-spacing:-2.6px; margin:9px 0 8px; }
+    .acesso-cartao h3,.apoio-cartao h3 { font-size:22px; letter-spacing:-.9px; margin:0 0 12px; }
+    .acesso-cartao p,.apoio-cartao p { font-size:14px; line-height:1.8; color:#65776e; }
+    .acesso-cartao .botao { margin-top:auto; align-self:flex-start; }
+    .acesso-vantagens { list-style:none; padding:0; margin:8px 0 30px; }
+    .acesso-vantagens li { padding:8px 0; font-size:14px; }
+    .acesso-vantagens li::before { content:'✓'; color:#4e8d60; font-weight:800; margin-right:9px; }
+    .apoio-cartao { background:#eaf1e8; display:flex; flex-direction:column; gap:3px; }
+    .apoio-titulo { display:flex; align-items:center; gap:9px; color:#37694b; font-weight:800; font-size:12px; letter-spacing:1.3px; text-transform:uppercase; margin-bottom:15px; }
+    .qr-moldura { background:#fff; border:1px solid #d8e4da; width:178px; height:178px; border-radius:17px; margin:12px 0 14px; display:flex; justify-content:center; align-items:center; padding:11px; }
+    .qr-moldura img { display:none; width:100%; height:100%; object-fit:contain; }
+    .qr-vazio { font-size:13px; line-height:1.6; font-weight:600; color:#799086; text-align:center; padding:13px; }
+    .botao-pix { align-self:flex-start; background:#d4e7d5; color:#205a39; border:1px solid #b8d6bc; margin:2px 0 12px; }
+    .botao-pix:hover { background:#c6dfc9; }
+    .apoio-rodape { font-size:12px!important; color:#61756a!important; margin:0; }
+    @media(max-width:750px) { .acesso-apoio { grid-template-columns:1fr; } .acesso-cartao,.apoio-cartao { padding:27px; } .acesso-cartao .botao { width:100%; } }
+    @media(max-width:920px) { .hero-grade { grid-template-columns:1fr; gap:65px } .hero { padding:70px 0 90px } .visual { width:min(640px,calc(100% - 28px)); margin:auto } .manifesto-grade { gap:32px } .navegacao-centro { display:none } }
+    @media(max-width:650px) { .container { width:min(100% - 36px,1160px) } .navegacao { min-height:74px } .logo { font-size:15px; gap:8px } .marca { width:31px; height:31px; font-size:17px } .navegacao>.botao { min-height:41px; padding:0 12px; font-size:12px } h1 { letter-spacing:-2.7px; font-size:46px } .hero-texto { font-size:15px } .hero { padding:60px 0 83px } .hero-acoes .botao { width:100% } .hero-nota { line-height:1.6 } .visual { padding:9px; border-radius:17px; width:100%; transform:none } .painel { grid-template-columns:65px 1fr; min-height:275px } .lateral { padding:17px 7px } .lateral strong { font-size:7px } .menu-falso { font-size:0; justify-content:center } .menu-falso.ativo { padding:7px; margin:0 0 17px } .conteudo-painel { padding:16px 10px } .metricas { gap:5px } .metrica { padding:9px 6px } .metrica strong { font-size:15px } .metrica small,.metrica em { font-size:7px } .cabecalho-painel strong { font-size:12px } .cabecalho-painel span { font-size:7px } .flutuante { left:-6px; bottom:-31px; padding:9px 12px } .secao { padding:78px 0 } .recursos { grid-template-columns:1fr; gap:13px } .recurso { min-height:auto; padding:27px } .recurso-icone { margin-bottom:23px } .manifesto { padding:70px 0 } .manifesto-grade { grid-template-columns:1fr } .planos { grid-template-columns:1fr; gap:15px } .plano { padding:29px } .chamada { padding:70px 0 } .rodape-interno { flex-direction:column; align-items:flex-start } .rodape-links { gap:18px } }
+    @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto } *,*::before,*::after { transition:none!important } }
+  </style>
+</head>
+<body>
+  <!-- O sistema será publicado em /sistema/ no mesmo domínio. O QR Code está no arquivo qrcode.png. -->
+  <header class="topo">
+    <div class="container">
+      <nav class="navegacao" aria-label="Navegação principal">
+        <a href="#inicio" class="logo" aria-label="Pobre Estudante, voltar ao início"><span class="marca">p.</span> pobre estudante<span style="color:var(--verde)">.</span></a>
+        <div class="navegacao-centro"><a href="#recursos">Recursos</a><a href="#proposito">Nosso propósito</a><a href="sobre.html">Sobre o criador</a><a href="#contribuir">Como funciona</a></div>
+        <a href="#" class="botao botao-verde link-sistema">Acessar plataforma <span class="seta" aria-hidden="true">↗</span></a>
+      </nav>
+      <section class="hero" id="inicio">
+        <div class="hero-grade">
+          <div>
+            <span class="selo"><span class="ponto"></span> PARA QUEM NÃO DESISTE DE ESTUDAR</span>
+            <h1>Seu sonho é grande. O custo de estudar <em>não precisa ser.</em></h1>
+            <p class="hero-texto">Uma plataforma para organizar seus estudos, acompanhar sua evolução e construir sua rotina. Sem mensalidade obrigatória. Sem deixar ninguém para trás.</p>
+            <div class="hero-acoes"><a href="#" class="botao botao-verde link-sistema">Começar a estudar grátis <span class="seta" aria-hidden="true">↗</span></a><a href="#proposito" class="botao botao-contorno">Conheça nosso propósito <span aria-hidden="true">↓</span></a></div>
+            <p class="hero-nota"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Acesso gratuito de verdade. Contribuição é opcional.</p>
+          </div>
+          <div class="visual" aria-label="Ilustração conceitual de um painel de acompanhamento de estudos. Os números são apenas demonstrativos.">
+            <div class="janela">
+              <div class="janela-topo"><div class="bolinhas"><i></i><i></i><i></i></div><span class="url-falsa">seu espaço de estudos</span><span style="font-size:10px;color:#839489">◌</span></div>
+              <div class="painel"><aside class="lateral"><strong>p. estudante</strong><div class="menu-falso ativo"><span class="mini-icone"></span>Visão geral</div><div class="menu-falso"><span class="mini-icone"></span>Meu plano</div><div class="menu-falso"><span class="mini-icone"></span>Disciplinas</div><div class="menu-falso"><span class="mini-icone"></span>Progresso</div></aside>
+              <div class="conteudo-painel"><div class="cabecalho-painel"><strong>Sua evolução 📈</strong><span>Esta semana</span></div><div class="metricas"><div class="metrica"><small>Horas estudadas</small><strong>18h 30</strong><em>↑ Continue assim!</em></div><div class="metrica"><small>Dias de estudo</small><strong>05</strong><em>de 07 dias</em></div><div class="metrica"><small>Meta semanal</small><strong>82%</strong><em>Quase lá!</em></div></div><div class="grafico"><div class="grafico-titulo">Consistência nos estudos <span>Exemplo ilustrativo</span></div><div class="barras"><div class="barra" style="height:44%"></div><div class="barra destaque" style="height:71%"></div><div class="barra" style="height:55%"></div><div class="barra destaque" style="height:91%"></div><div class="barra destaque" style="height:76%"></div><div class="barra" style="height:36%"></div><div class="barra destaque" style="height:67%"></div></div><div class="dias"><span>SEG</span><span>TER</span><span>QUA</span><span>QUI</span><span>SEX</span><span>SÁB</span><span>DOM</span></div></div></div></div>
+            </div>
+            <div class="flutuante"><div class="circulo">✓</div><div><strong>Um dia de cada vez.</strong><small>Você está construindo o seu futuro.</small></div></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
+  <main>
+    <section class="secao" id="recursos"><div class="container"><p class="etiqueta">MENOS CONFUSÃO, MAIS DIREÇÃO</p><h2 class="titulo-secao">O estudo é seu.<br>O controle também.</h2><p class="subtitulo">Tudo começa com uma rotina possível. Um espaço para transformar intenção em consistência e enxergar o quanto você avançou.</p><div class="recursos">
+      <article class="recurso"><div class="recurso-icone"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M8 15h3"/></svg></div><h3>Organize sua rotina</h3><p>Tenha mais clareza sobre o que estudar e transforme seus objetivos em uma rotina sustentável.</p></article>
+      <article class="recurso"><div class="recurso-icone"><svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16M8 15l4-5 4 2 4-7"/></svg></div><h3>Acompanhe sua evolução</h3><p>Visualize seu progresso e descubra como a constância faz diferença ao longo do tempo.</p></article>
+      <article class="recurso"><div class="recurso-icone"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div><h3>Mantenha o foco</h3><p>Um lugar para se concentrar no que importa: voltar amanhã e continuar a caminhada.</p></article>
+    </div></div></section>
+    <section class="manifesto" id="proposito"><div class="container manifesto-grade"><div><p class="etiqueta">POR QUE EXISTIMOS</p><h2>Talento não deveria depender de <em>quanto dinheiro você tem.</em></h2></div><div><p>Tem muita gente cheia de sonhos, capacidade e vontade de estudar, mas com poucos recursos para investir em ferramentas.</p><p>O <strong>Pobre Estudante</strong> nasceu de uma ideia simples: oferecer uma forma de acompanhar e organizar os estudos sem cobrar de quem não pode pagar.</p><p>Aqui, quem pode contribui. Quem não pode, estuda do mesmo jeito. <strong>Sem constrangimento. Sem diferença de acesso.</strong></p></div></div></section>
+    <section class="secao precos-centro" id="contribuir">
+      <div class="container">
+        <p class="etiqueta">ACESSO LIVRE, DE VERDADE</p>
+        <h2 class="titulo-secao">Gratuito para estudar.<br>Voluntário para apoiar.</h2>
+        <p class="subtitulo">Não existem planos ou recursos exclusivos para quem contribui. Todo estudante tem o mesmo acesso à plataforma.</p>
+        <div class="acesso-apoio">
+          <article class="acesso-cartao">
+            <h3>Seu espaço de estudos</h3>
+            <div class="preco">R$ 0</div>
+            <p>Crie sua conta e comece a organizar sua rotina. Sem mensalidade, sem cartão de crédito e sem cobrança para continuar.</p>
+            <ul class="acesso-vantagens"><li>Acesso às funcionalidades da plataforma</li><li>Acompanhamento da sua evolução</li><li>Mesmos recursos para todos</li></ul>
+            <a href="#" class="botao botao-escuro link-sistema">Começar a estudar grátis <span class="seta" aria-hidden="true">↗</span></a>
+          </article>
+          <aside class="apoio-cartao" aria-label="Contribuição voluntária via Pix">
+            <span class="apoio-titulo">♡ MANTENHA A IDEIA VIVA</span>
+            <h3>Gostou? Apoie, se puder.</h3>
+            <p>Se esta ferramenta te ajudar, você pode fazer um Pix de qualquer valor para apoiar sua manutenção. Não é obrigatório e não muda seu acesso.</p>
+            <div class="qr-moldura">
+              <img id="imagem-pix" src="qrcode.png" alt="QR Code Pix para contribuição voluntária ao Pobre Estudante" />
+              <div class="qr-vazio" id="qr-vazio">Seu QR Code Pix aparecerá aqui.</div>
+            </div>
+            <p><strong>Contribuição mensal sugerida: R$ 10,00.</strong><br>Sua contribuição ajuda a cobrir os custos de manutenção da plataforma. Se puder e quiser contribuir com um valor maior, fique à vontade. Qualquer valor é bem-vindo, e o apoio é sempre voluntário.</p>
+            <a class="botao botao-pix" href="https://nubank.com.br/cobrar/18pq7u/6ae75330-cdd8-404d-b8be-601894dae3f6" target="_blank" rel="noopener noreferrer">Apoiar via Pix <span aria-hidden="true">↗</span></a>
+            <p class="apoio-rodape">Pix voluntário • Contribuição opcional • Sem assinatura</p>
+          </aside>
+        </div>
+        <p class="observacao">O propósito é manter a plataforma gratuita. Nenhuma contribuição é exigida para estudar.</p>
+      </div>
+    </section>
+
+    <section class="chamada"><div class="container chamada-conteudo"><p class="etiqueta" style="color:var(--verde)">O PRÓXIMO PASSO COMEÇA AQUI</p><h2>Seu futuro merece uma chance. <em>Comece hoje.</em></h2><p>Você não precisa ter tudo resolvido. Precisa apenas começar, continuar e acreditar no processo.</p><a href="#" class="botao botao-verde link-sistema">Quero começar gratuitamente <span class="seta" aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="rodape"><div class="container rodape-interno"><a href="#inicio" class="logo"><span class="marca">p.</span> pobre estudante.</a><span>Feito para quem acredita no poder da educação.</span><div class="rodape-links"><a href="sobre.html">Sobre o criador</a><a href="#proposito">Propósito</a><a href="#contribuir">Apoiar</a><a href="mailto:contato@pobreestudante.com.br">Contato</a></div></div></footer>
+  <div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+  <script>
+    // Caminho do sistema no mesmo domínio (funciona em produção).
+    const LINK_DO_SISTEMA = '/sistema/';
+
+    const aviso = document.getElementById('aviso');
+    let temporizadorAviso;
+    function mostrarAviso(mensagem) {
+      aviso.textContent = mensagem;
+      aviso.classList.add('mostrar');
+      clearTimeout(temporizadorAviso);
+      temporizadorAviso = setTimeout(() => aviso.classList.remove('mostrar'), 4200);
+    }
+    function configurarLinks(seletor, endereco, mensagemPendente) {
+      document.querySelectorAll(seletor).forEach((elemento) => {
+        elemento.addEventListener('click', (evento) => {
+          if (!endereco || endereco.startsWith('COLE_AQUI_')) {
+            evento.preventDefault();
+            mostrarAviso(mensagemPendente);
+          } else {
+            evento.preventDefault();
+            window.location.href = endereco;
+          }
+        });
+      });
+    }
+    configurarLinks('.link-sistema', LINK_DO_SISTEMA, 'A plataforma ainda será conectada. Insira o endereço no arquivo index.html.');
+    const imagemPix = document.getElementById('imagem-pix');
+    const avisoQr = document.getElementById('qr-vazio');
+    imagemPix.addEventListener('load', () => { imagemPix.style.display = 'block'; avisoQr.style.display = 'none'; });
+    imagemPix.addEventListener('error', () => { imagemPix.style.display = 'none'; avisoQr.style.display = 'block'; });
+    if (imagemPix.complete && imagemPix.naturalWidth > 0) { imagemPix.style.display = 'block'; avisoQr.style.display = 'none'; }
+  </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#10232c" />
+  <meta name="description" content="Conheça Fernando, criador do Pobre Estudante, e a história de estudo, serviço público e solidariedade que inspirou esta plataforma gratuita." />
+  <title>Sobre o criador — Pobre Estudante</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root { --escuro:#10232c; --creme:#f8f7f2; --verde:#b7ec94; --texto:#172930; --suave:#607077; --linha:#dce3df }
+    * { box-sizing:border-box }
+    body { margin:0; background:var(--creme); color:var(--texto); font-family:'DM Sans',sans-serif; -webkit-font-smoothing:antialiased }
+    a { color:inherit; text-decoration:none }
+    a:focus-visible { outline:3px solid #609d47; outline-offset:6px }
+    .container { width:min(1100px,calc(100% - 48px)); margin:auto }
+    header,.apresentacao { background:var(--escuro); color:white }
+    nav { display:flex; justify-content:space-between; align-items:center; gap:24px; min-height:84px; border-bottom:1px solid #ffffff25 }
+    .logo { display:flex; align-items:center; gap:12px; font:800 19px Manrope,sans-serif; letter-spacing:-.9px }
+    .marca { display:grid; place-items:center; width:36px; height:36px; border-radius:11px; background:var(--verde); color:var(--escuro); transform:rotate(-6deg) }
+    .voltar { font-size:14px; color:#d2dedb }
+    .voltar:hover { color:var(--verde) }
+    h1,h2,h3 { font-family:Manrope,sans-serif; margin-top:0 }
+    .apresentacao { padding:64px 0 80px }
+    .grade { display:grid; grid-template-columns:1.15fr .85fr; align-items:center; gap:72px }
+    .etiqueta { font-size:12px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#37694b; margin:0 0 20px }
+    .apresentacao .etiqueta { color:var(--verde) }
+    h1 { font-size:clamp(40px,5.3vw,64px); line-height:1.12; letter-spacing:-2.7px; margin-bottom:25px }
+    h1 span { color:var(--verde) }
+    .introducao { color:#c5d2d0; font-size:18px; line-height:1.85; margin:0 }
+    figure { margin:0 }
+    .retrato { display:block; width:100%; height:auto; border-radius:22px }
+    figcaption { margin-top:14px; font-size:13px; color:#c5d2d0 }
+    .historia { max-width:760px; padding:80px 0; margin:auto }
+    h2 { font-size:clamp(29px,3.6vw,42px); line-height:1.22; letter-spacing:-1.5px; margin-bottom:25px }
+    p { font-size:17px; line-height:1.9; margin:0 0 20px }
+    .destaque { border-left:3px solid #609d47; padding:7px 0 7px 25px; font-size:21px; line-height:1.6; margin:32px 0; font-weight:500 }
+    .trajetoria { border-top:1px solid var(--linha); padding:64px 0 76px }
+    .colunas { display:grid; grid-template-columns:1fr 1fr; gap:64px }
+    h3 { font-size:22px; letter-spacing:-.6px; margin-bottom:20px }
+    .lista { padding:0; margin:0; list-style:none }
+    .lista li { padding:15px 0; border-bottom:1px solid var(--linha); font-size:16px; line-height:1.65 }
+    .lista strong { display:block }
+    .lista span { color:var(--suave); font-size:14px }
+    .formacao { margin-top:30px; color:var(--suave); font-size:16px }
+    .convite { padding:64px 0; background:#eaf1e8 }
+    .convite .container { max-width:808px }
+    .botao { display:inline-flex; align-items:center; gap:14px; padding:16px 23px; background:var(--escuro); color:white; border-radius:12px; font-size:14px; font-weight:700; margin-top:8px }
+    .botao:hover { background:#254735 }
+    footer { padding:28px 0; font-size:13px; color:var(--suave) }
+    footer .container { display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap }
+    @media(max-width:760px) { .grade,.colunas { grid-template-columns:1fr; gap:36px } .apresentacao { padding:44px 0 50px } figure { max-width:420px } .historia { padding:52px 0 } .trajetoria { padding:44px 0 } h1 { letter-spacing:-1.7px } .container { width:calc(100% - 36px) } nav { flex-wrap:wrap; padding:18px 0; gap:16px } .logo { font-size:17px } .convite { padding:46px 0 } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container" aria-label="Navegação principal">
+      <a class="logo" href="index.html" aria-label="Pobre Estudante, página inicial"><span class="marca">p.</span> pobre estudante.</a>
+      <a class="voltar" href="index.html">← Voltar ao início</a>
+    </nav>
+  </header>
+  <main>
+    <section class="apresentacao" aria-labelledby="titulo">
+      <div class="container grade">
+        <div>
+          <p class="etiqueta">Sobre o criador</p>
+          <h1 id="titulo">Sou Fernando.<br>Minha história começou com <span>uma oportunidade.</span></h1>
+          <p class="introducao">Uma apostila que ganhei de um amigo abriu caminho para os concursos públicos. Anos depois, essa experiência inspirou a criação do Pobre Estudante: uma plataforma gratuita para ajudar outras pessoas a seguir estudando.</p>
+        </div>
+        <figure>
+          <img class="retrato" src="fernando.png" alt="Fernando, criador da plataforma Pobre Estudante" width="1240" height="1748" fetchpriority="high" />
+          <figcaption>Fernando · Criador do Pobre Estudante</figcaption>
+        </figure>
+      </div>
+    </section>
+    <div class="container">
+      <section class="historia" aria-labelledby="origem">
+        <p class="etiqueta">O começo de tudo</p>
+        <h2 id="origem">Uma apostila, um amigo e um novo caminho.</h2>
+        <p>Meu primeiro contato com os estudos para concursos aconteceu durante um estágio na Secretaria da Fazenda do Estado de Pernambuco. Foi ali que um amigo me deu uma apostila da ESA. Aquele gesto se tornou o ponto de partida da minha preparação.</p>
+        <p>Em 2006, veio a minha primeira aprovação, para o cargo de agente de trânsito. Essa conquista foi um incentivo para continuar estudando e buscar novas oportunidades no serviço público.</p>
+        <p>Ao longo dessa trajetória, fui aprovado em diversos concursos e ocupei diferentes cargos públicos, entre eles agente de trânsito, contador do Estado de Pernambuco e investigador de Polícia Civil.</p>
+        <p class="destaque">A lembrança de como comecei é uma das razões para manter esta plataforma gratuita.</p>
+        <p>O Pobre Estudante nasceu dessa motivação: oferecer uma ferramenta para quem quer organizar os estudos e continuar buscando uma aprovação. Assim como recebi ajuda para começar, quero contribuir para que outras pessoas também tenham uma oportunidade.</p>
+      </section>
+      <section class="trajetoria" aria-labelledby="trajetoria">
+        <p class="etiqueta">Formação e serviço público</p>
+        <h2 id="trajetoria">Os caminhos que construíram essa história.</h2>
+        <div class="colunas">
+          <div>
+            <h3>Minha formação</h3>
+            <ul class="lista">
+              <li><strong>Ciências Contábeis</strong><span>Graduação</span></li>
+              <li><strong>Contabilidade Pública</strong><span>Pós-graduação</span></li>
+              <li><strong>Desenvolvimento de Software</strong><span>Pós-graduação</span></li>
+              <li><strong>Ciência de Dados</strong><span>Pós-graduação</span></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Aprovações em concursos</h3>
+            <ul class="lista">
+              <li>Prefeitura de Olinda</li>
+              <li>Conselho Regional dos Representantes Comerciais no Estado de Pernambuco</li>
+              <li>Governo do Estado de Pernambuco</li>
+              <li>Polícia Civil do Rio Grande do Norte</li>
+            </ul>
+            <p class="formacao">Minha primeira aprovação foi em 2006. Desde então, o estudo fez parte da minha trajetória no serviço público.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="convite" aria-labelledby="proposito">
+      <div class="container">
+        <p class="etiqueta">Da minha história para o seu próximo passo</p>
+        <h2 id="proposito">Uma ferramenta gratuita para acompanhar sua caminhada.</h2>
+        <p>Você pode usar o Pobre Estudante para organizar sua rotina e acompanhar sua evolução. O acesso é gratuito, e qualquer contribuição para manter o projeto é voluntária.</p>
+        <a class="botao" href="/sistema/">Começar a estudar grátis <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container"><span>Pobre Estudante · Feito para quem acredita no poder da educação.</span><a href="index.html#contribuir">Apoiar o projeto →</a></div></footer>
+</body>
+</html>
