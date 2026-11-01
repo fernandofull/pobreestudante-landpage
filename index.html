@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#0f1e29" />
   <meta name="description" content="Pobre Estudante: uma plataforma gratuita para organizar seus estudos, acompanhar sua evolução e seguir firme até a aprovação. Contribua apenas se puder." />
@@ -146,6 +147,11 @@
     @media(max-width:920px) { .hero-grade { grid-template-columns:1fr; gap:65px } .hero { padding:70px 0 90px } .visual { width:min(640px,calc(100% - 28px)); margin:auto } .manifesto-grade { gap:32px } .navegacao-centro { display:none } }
     @media(max-width:650px) { .container { width:min(100% - 36px,1160px) } .navegacao { min-height:74px } .logo { font-size:15px; gap:8px } .marca { width:31px; height:31px; font-size:17px } .navegacao>.botao { min-height:41px; padding:0 12px; font-size:12px } h1 { letter-spacing:-2.7px; font-size:46px } .hero-texto { font-size:15px } .hero { padding:60px 0 83px } .hero-acoes .botao { width:100% } .hero-nota { line-height:1.6 } .visual { padding:9px; border-radius:17px; width:100%; transform:none } .painel { grid-template-columns:65px 1fr; min-height:275px } .lateral { padding:17px 7px } .lateral strong { font-size:7px } .menu-falso { font-size:0; justify-content:center } .menu-falso.ativo { padding:7px; margin:0 0 17px } .conteudo-painel { padding:16px 10px } .metricas { gap:5px } .metrica { padding:9px 6px } .metrica strong { font-size:15px } .metrica small,.metrica em { font-size:7px } .cabecalho-painel strong { font-size:12px } .cabecalho-painel span { font-size:7px } .flutuante { left:-6px; bottom:-31px; padding:9px 12px } .secao { padding:78px 0 } .recursos { grid-template-columns:1fr; gap:13px } .recurso { min-height:auto; padding:27px } .recurso-icone { margin-bottom:23px } .manifesto { padding:70px 0 } .manifesto-grade { grid-template-columns:1fr } .planos { grid-template-columns:1fr; gap:15px } .plano { padding:29px } .chamada { padding:70px 0 } .rodape-interno { flex-direction:column; align-items:flex-start } .rodape-links { gap:18px } }
     @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto } *,*::before,*::after { transition:none!important } }
+  
+    .instagram-link { display:inline-flex; align-items:center; justify-content:center; width:44px; height:44px; flex-shrink:0; border-radius:13px; color:#fff; background:radial-gradient(circle at 30% 105%,#feda75 0%,#fa7e1e 28%,#d62976 52%,#962fbf 76%,#4f5bd5 100%); transition:transform .2s; }
+    .instagram-link:hover { color:#fff; transform:translateY(-2px); }
+    .instagram-link svg { width:28px; height:28px; }
+    .rodape-links,.rodape-interno { align-items:center; }
   </style>
 </head>
 <body>
@@ -154,7 +160,7 @@
     <div class="container">
       <nav class="navegacao" aria-label="Navegação principal">
         <a href="#inicio" class="logo" aria-label="Pobre Estudante, voltar ao início"><span class="marca">p.</span> pobre estudante<span style="color:var(--verde)">.</span></a>
-        <div class="navegacao-centro"><a href="#recursos">Recursos</a><a href="#proposito">Nosso propósito</a><a href="sobre.html">Sobre o criador</a><a href="#contribuir">Como funciona</a></div>
+        <div class="navegacao-centro"><a href="#recursos">Recursos</a><a href="#proposito">Nosso propósito</a><a href="sobre.html">Sobre o criador</a><a href="ebooks.html">E-books</a><a href="#contribuir">Como funciona</a></div>
         <a href="#" class="botao botao-verde link-sistema">Acessar plataforma <span class="seta" aria-hidden="true">↗</span></a>
       </nav>
       <section class="hero" id="inicio">
@@ -217,7 +223,7 @@
 
     <section class="chamada"><div class="container chamada-conteudo"><p class="etiqueta" style="color:var(--verde)">O PRÓXIMO PASSO COMEÇA AQUI</p><h2>Seu futuro merece uma chance. <em>Comece hoje.</em></h2><p>Você não precisa ter tudo resolvido. Precisa apenas começar, continuar e acreditar no processo.</p><a href="#" class="botao botao-verde link-sistema">Quero começar gratuitamente <span class="seta" aria-hidden="true">↗</span></a></div></section>
   </main>
-  <footer class="rodape"><div class="container rodape-interno"><a href="#inicio" class="logo"><span class="marca">p.</span> pobre estudante.</a><span>Feito para quem acredita no poder da educação.</span><div class="rodape-links"><a href="sobre.html">Sobre o criador</a><a href="#proposito">Propósito</a><a href="#contribuir">Apoiar</a><a href="mailto:contato@pobreestudante.com.br">Contato</a></div></div></footer>
+  <footer class="rodape"><div class="container rodape-interno"><a href="#inicio" class="logo"><span class="marca">p.</span> pobre estudante.</a><span>Feito para quem acredita no poder da educação.</span><div class="rodape-links"><a href="sobre.html">Sobre o criador</a><a href="ebooks.html">E-books</a><a href="#proposito">Propósito</a><a href="#contribuir">Apoiar</a><a href="https://www.instagram.com/pobreestudante_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @pobreestudante_ (abre em nova aba)" title="Instagram @pobreestudante_" class="instagram-link"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a></div></div></footer>
   <div class="aviso" id="aviso" role="status" aria-live="polite"></div>
   <script>
     // Caminho do sistema no mesmo domínio (funciona em produção).
