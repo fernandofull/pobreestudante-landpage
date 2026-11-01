@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#10232c" />
+  <meta name="description" content="Em breve no Pobre Estudante: sistema de revisão com flashcards e materiais de estudo gratuitos." />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <title>Em breve — Pobre Estudante</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root { --escuro:#10232c; --creme:#f8f7f2; --verde:#b7ec94; --texto:#172930; --suave:#607077; --linha:#dce3df }
+    * { box-sizing:border-box }
+    body { margin:0; background:var(--creme); color:var(--texto); font-family:'DM Sans',sans-serif; -webkit-font-smoothing:antialiased }
+    a { color:inherit; text-decoration:none }
+    a:focus-visible { outline:3px solid #609d47; outline-offset:6px }
+    .container { width:min(1100px,calc(100% - 48px)); margin:auto }
+    header { background:var(--escuro); color:#fff }
+    nav { min-height:84px; display:flex; align-items:center; justify-content:space-between; gap:24px; border-bottom:1px solid #ffffff25 }
+    .logo { display:flex; align-items:center; gap:12px; font:800 19px Manrope,sans-serif; letter-spacing:-.9px }
+    .marca { width:36px; height:36px; display:grid; place-items:center; border-radius:11px; background:var(--verde); color:var(--escuro); transform:rotate(-6deg); flex-shrink:0 }
+    .links { display:flex; flex-wrap:wrap; gap:24px; color:#c5d2d0; font-size:14px }
+    .links a:hover,.links [aria-current] { color:var(--verde) }
+    .hero { background:var(--escuro); color:white; padding:78px 0 92px; overflow:hidden }
+    .hero-grade { display:grid; grid-template-columns:1.2fr .8fr; gap:70px; align-items:center }
+    .selo { display:inline-flex; align-items:center; gap:9px; padding:9px 14px; border:1px solid #49655c; background:#19382f; border-radius:100px; color:#d6f2d4; font-size:12px; font-weight:700 }
+    .selo::before { content:''; width:7px; height:7px; border-radius:50%; background:var(--verde) }
+    h1,h2,h3 { font-family:Manrope,sans-serif }
+    h1 { font-size:clamp(46px,6vw,76px); line-height:1.08; letter-spacing:-3px; margin:26px 0 }
+    h1 span { color:var(--verde) }
+    .intro { max-width:540px; color:#c5d2d0; font-size:18px; line-height:1.8; margin:0 }
+    .ilustracao { position:relative; padding:30px 10px; }
+    .cartao { position:relative; background:#f8f7f2; color:var(--texto); border:1px solid #dce3df; border-radius:22px; padding:32px; transform:rotate(-5deg); box-shadow:0 24px 65px #0003 }
+    .cartao::before { content:''; position:absolute; inset:0; border:1px solid #ffffff40; border-radius:22px; transform:rotate(12deg); background:#b7ec941c; z-index:-1 }
+    .cartao small { color:#4d7158; font-size:11px; letter-spacing:2px; font-weight:700 }
+    .cartao strong { display:block; font:800 27px/1.4 Manrope,sans-serif; letter-spacing:-1px; margin:32px 0 }
+    .cartao span { display:block; border-top:1px solid var(--linha); padding-top:17px; font-size:12px; color:var(--suave) }
+    .novidades { padding:66px 0 72px }
+    .etiqueta { color:#4b7559; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:2px; margin:0 0 16px }
+    h2 { font-size:clamp(28px,3.5vw,38px); letter-spacing:-1.4px; margin:0 0 30px }
+    .grade { display:grid; grid-template-columns:1fr 1fr; gap:22px }
+    article { background:#fff; border:1px solid var(--linha); border-radius:20px; padding:32px }
+    .icone { display:grid; place-items:center; width:48px; height:48px; border-radius:13px; background:#eaf4e5; color:#326342; margin-bottom:25px }
+    .icone svg { width:25px; height:25px; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round }
+    h3 { font-size:21px; letter-spacing:-.6px; margin:0 0 12px }
+    article p { color:var(--suave); line-height:1.8; margin:0; font-size:16px }
+    .acompanhar { display:flex; align-items:center; justify-content:space-between; gap:28px; margin-top:32px; padding:28px 32px; background:#e9eee5; border-radius:18px }
+    .acompanhar p { margin:0; color:#586b63; line-height:1.7 }
+    .acompanhar strong { display:block; color:var(--texto); margin-bottom:4px }
+    .botao { display:inline-flex; align-items:center; justify-content:center; gap:15px; padding:17px 22px; background:var(--escuro); color:#fff; border-radius:12px; font-size:14px; font-weight:700; white-space:nowrap }
+    .botao:hover { background:#254735 }
+    footer { border-top:1px solid var(--linha); padding:28px 0; color:var(--suave); font-size:13px }
+    footer .container { display:flex; flex-wrap:wrap; justify-content:space-between; gap:20px }
+    footer a:hover { color:#326342 }
+    @media(max-width:760px) { .container { width:calc(100% - 36px) } nav { flex-wrap:wrap; padding:20px 0; gap:20px } .logo { font-size:17px } .links { gap:18px } .hero { padding:48px 0 58px } .hero-grade { grid-template-columns:1fr; gap:24px } h1 { letter-spacing:-2px } .ilustracao { width:min(330px,100%); margin:0 auto; padding:25px 12px } .cartao { padding:25px } .cartao strong { margin:22px 0 } .grade { grid-template-columns:1fr } .novidades { padding:44px 0 } article { padding:26px } .acompanhar { align-items:flex-start; flex-direction:column; padding:26px } .botao { white-space:normal } }
+  </style>
+</head>
+<body>
+  <header><nav class="container" aria-label="Navegação principal"><a class="logo" href="index.html"><span class="marca">p.</span> pobre estudante.</a><div class="links"><a href="index.html">Início</a><a href="ebooks.html">E-books</a><a href="em-breve.html" aria-current="page">Em breve</a></div></nav></header>
+  <main>
+    <section class="hero" aria-labelledby="titulo"><div class="container hero-grade">
+      <div><span class="selo">Novidades em preparação</span><h1 id="titulo">Em breve.<br /><span>Mais formas<br />de aprender.</span></h1><p class="intro">Estamos preparando um sistema de revisão com flashcards e materiais de estudo gratuitos para ajudar você a seguir firme nos estudos.</p></div>
+      <div class="ilustracao" aria-hidden="true"><div class="cartao"><small>SEU PRÓXIMO APRENDIZADO</small><strong>Aprender.<br />Revisar.<br />Seguir em frente.</strong><span>Flashcards + materiais gratuitos · Em breve</span></div></div>
+    </div></section>
+    <section class="novidades container" aria-labelledby="novidades-titulo">
+      <p class="etiqueta">O que vem por aí</p><h2 id="novidades-titulo">Seu estudo, um passo além.</h2>
+      <div class="grade">
+        <article><div class="icone" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="7" width="15" height="14" rx="2"/><path d="M16 3H4a2 2 0 0 0-2 2v11M9 12h7M9 16h4"/></svg></div><h3>Revisão com flashcards</h3><p>Um novo sistema de revisão com cartões de perguntas e respostas para retomar conteúdos e reforçar o que você aprendeu.</p></article>
+        <article><div class="icone" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 6c-3-2-6-2-10-1v15c4-1 7-1 10 1 3-2 6-2 10-1V5c-4-1-7-1-10 1Zm0 0v15"/></svg></div><h3>Material de estudo gratuito</h3><p>Materiais gratuitos para apoiar sua preparação e complementar sua rotina de estudos. Mais conhecimento ao seu alcance, sem custo.</p></article>
+      </div>
+      <aside class="acompanhar"><p><strong>Acompanhe os próximos passos.</strong>As novidades ainda estão em preparação. Fique por dentro pelo nosso Instagram.</p><a class="botao" href="https://www.instagram.com/pobreestudante_/" target="_blank" rel="noopener noreferrer" aria-label="Acompanhar no Instagram (abre em nova aba)">Acompanhar novidades <span aria-hidden="true">↗</span></a></aside>
+    </section>
+  </main>
+  <footer><div class="container"><span>Pobre Estudante · Feito para quem acredita no poder da educação.</span><a href="index.html">← Voltar ao início</a></div></footer>
+</body>
+</html>
