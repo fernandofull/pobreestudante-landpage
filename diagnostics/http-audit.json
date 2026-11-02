@@ -1,0 +1,985 @@
+{
+  "time_utc": "2026-11-02T13:39:01.411228+00:00",
+  "requests": [
+    {
+      "agent": "desktop",
+      "chain": [
+        {
+          "url": "http://pobreestudante.com.br/",
+          "status": 200,
+          "headers": {
+            "Connection": "close",
+            "Content-Type": "text/html",
+            "Last-Modified": "Sun, 01 Nov 2026 16:33:39 GMT",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "27496",
+            "Date": "Mon, 02 Nov 2026 13:38:59 GMT",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores"
+          },
+          "set_cookie": [],
+          "bytes": 27496,
+          "sha256": "7cd916cdc06ae4c5bb0f9b9241eff737b8470f0400d1b4c8886c145b168de9e8"
+        }
+      ]
+    },
+    {
+      "agent": "desktop",
+      "chain": [
+        {
+          "url": "http://pobreestudante.com.br/sistema",
+          "status": 301,
+          "headers": {
+            "Connection": "close",
+            "Content-Type": "text/html",
+            "Content-Length": "795",
+            "Date": "Mon, 02 Nov 2026 13:38:59 GMT",
+            "Location": "http://pobreestudante.com.br/sistema/",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores"
+          },
+          "set_cookie": [],
+          "bytes": 795,
+          "sha256": "e8b101a7c7f64aad528cc734513cbeb02243c0af37930dc0f3239749cff184b6"
+        },
+        {
+          "url": "http://pobreestudante.com.br/sistema/",
+          "status": 503,
+          "headers": {
+            "Connection": "close",
+            "Cache-Control": "private, no-cache, no-store, must-revalidate, max-age=0",
+            "Pragma": "no-cache",
+            "Content-Type": "text/html",
+            "Content-Length": "807",
+            "Date": "Mon, 02 Nov 2026 13:38:59 GMT",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores"
+          },
+          "set_cookie": [],
+          "bytes": 807,
+          "sha256": "b933eeeb1ffa52a3ab6b940947e31d4ca4ff0d3889ea07fc653915f4719620c6"
+        }
+      ]
+    },
+    {
+      "agent": "desktop",
+      "chain": [
+        {
+          "url": "http://pobreestudante.com.br/sistema/",
+          "status": 503,
+          "headers": {
+            "Connection": "close",
+            "Cache-Control": "private, no-cache, no-store, must-revalidate, max-age=0",
+            "Pragma": "no-cache",
+            "Content-Type": "text/html",
+            "Content-Length": "807",
+            "Date": "Mon, 02 Nov 2026 13:39:00 GMT",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores"
+          },
+          "set_cookie": [],
+          "bytes": 807,
+          "sha256": "b933eeeb1ffa52a3ab6b940947e31d4ca4ff0d3889ea07fc653915f4719620c6"
+        }
+      ]
+    },
+    {
+      "agent": "desktop",
+      "chain": [
+        {
+          "url": "http://pobreestudante.com.br/sistema?utm_source=instagram&probe=a%2Fb",
+          "status": 301,
+          "headers": {
+            "Connection": "close",
+            "Content-Type": "text/html",
+            "Content-Length": "795",
+            "Date": "Mon, 02 Nov 2026 13:39:00 GMT",
+            "Location": "http://pobreestudante.com.br/sistema/?utm_source=instagram&probe=a%2Fb",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores"
+          },
+          "set_cookie": [],
+          "bytes": 795,
+          "sha256": "e8b101a7c7f64aad528cc734513cbeb02243c0af37930dc0f3239749cff184b6"
+        },
+        {
+          "url": "http://pobreestudante.com.br/sistema/?utm_source=instagram&probe=a%2Fb",
+          "status": 503,
+          "headers": {
+            "Connection": "close",
+            "Cache-Control": "private, no-cache, no-store, must-revalidate, max-age=0",
+            "Pragma": "no-cache",
+            "Content-Type": "text/html",
+            "Content-Length": "807",
+            "Date": "Mon, 02 Nov 2026 13:39:00 GMT",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores"
+          },
+          "set_cookie": [],
+          "bytes": 807,
+          "sha256": "b933eeeb1ffa52a3ab6b940947e31d4ca4ff0d3889ea07fc653915f4719620c6"
+        }
+      ]
+    },
+    {
+      "agent": "desktop",
+      "chain": [
+        {
+          "url": "http://pobreestudante.com.br/sistema/?utm_source=instagram&probe=a%2Fb",
+          "status": 503,
+          "headers": {
+            "Connection": "close",
+            "Cache-Control": "private, no-cache, no-store, must-revalidate, max-age=0",
+            "Pragma": "no-cache",
+            "Content-Type": "text/html",
+            "Content-Length": "807",
+            "Date": "Mon, 02 Nov 2026 13:39:00 GMT",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores"
+          },
+          "set_cookie": [],
+          "bytes": 807,
+          "sha256": "b933eeeb1ffa52a3ab6b940947e31d4ca4ff0d3889ea07fc653915f4719620c6"
+        }
+      ]
+    },
+    {
+      "agent": "desktop",
+      "chain": [
+        {
+          "url": "http://www.pobreestudante.com.br/",
+          "status": 200,
+          "headers": {
+            "Connection": "close",
+            "Content-Type": "text/html",
+            "Last-Modified": "Sun, 01 Nov 2026 16:33:39 GMT",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "27496",
+            "Date": "Mon, 02 Nov 2026 13:39:00 GMT",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores"
+          },
+          "set_cookie": [],
+          "bytes": 27496,
+          "sha256": "7cd916cdc06ae4c5bb0f9b9241eff737b8470f0400d1b4c8886c145b168de9e8"
+        }
+      ]
+    },
+    {
+      "agent": "desktop",
+      "chain": [
+        {
+          "url": "http://www.pobreestudante.com.br/sistema",
+          "status": 301,
+          "headers": {
+            "Connection": "close",
+            "Content-Type": "text/html",
+            "Content-Length": "795",
+            "Date": "Mon, 02 Nov 2026 13:39:00 GMT",
+            "Location": "http://www.pobreestudante.com.br/sistema/",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores"
+          },
+          "set_cookie": [],
+          "bytes": 795,
+          "sha256": "e8b101a7c7f64aad528cc734513cbeb02243c0af37930dc0f3239749cff184b6"
+        },
+        {
+          "url": "http://www.pobreestudante.com.br/sistema/",
+          "status": 503,
+          "headers": {
+            "Connection": "close",
+            "Cache-Control": "private, no-cache, no-store, must-revalidate, max-age=0",
+            "Pragma": "no-cache",
+            "Content-Type": "text/html",
+            "Content-Length": "807",
+            "Date": "Mon, 02 Nov 2026 13:39:01 GMT",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores"
+          },
+          "set_cookie": [],
+          "bytes": 807,
+          "sha256": "b933eeeb1ffa52a3ab6b940947e31d4ca4ff0d3889ea07fc653915f4719620c6"
+        }
+      ]
+    },
+    {
+      "agent": "desktop",
+      "chain": [
+        {
+          "url": "http://www.pobreestudante.com.br/sistema/",
+          "status": 503,
+          "headers": {
+            "Connection": "close",
+            "Cache-Control": "private, no-cache, no-store, must-revalidate, max-age=0",
+            "Pragma": "no-cache",
+            "Content-Type": "text/html",
+            "Content-Length": "807",
+            "Date": "Mon, 02 Nov 2026 13:39:01 GMT",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores"
+          },
+          "set_cookie": [],
+          "bytes": 807,
+          "sha256": "b933eeeb1ffa52a3ab6b940947e31d4ca4ff0d3889ea07fc653915f4719620c6"
+        }
+      ]
+    },
+    {
+      "agent": "desktop",
+      "chain": [
+        {
+          "url": "http://www.pobreestudante.com.br/sistema?utm_source=instagram&probe=a%2Fb",
+          "status": 301,
+          "headers": {
+            "Connection": "close",
+            "Content-Type": "text/html",
+            "Content-Length": "795",
+            "Date": "Mon, 02 Nov 2026 13:39:01 GMT",
+            "Location": "http://www.pobreestudante.com.br/sistema/?utm_source=instagram&probe=a%2Fb",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores"
+          },
+          "set_cookie": [],
+          "bytes": 795,
+          "sha256": "e8b101a7c7f64aad528cc734513cbeb02243c0af37930dc0f3239749cff184b6"
+        },
+        {
+          "url": "http://www.pobreestudante.com.br/sistema/?utm_source=instagram&probe=a%2Fb",
+          "status": 503,
+          "headers": {
+            "Connection": "close",
+            "Cache-Control": "private, no-cache, no-store, must-revalidate, max-age=0",
+            "Pragma": "no-cache",
+            "Content-Type": "text/html",
+            "Content-Length": "807",
+            "Date": "Mon, 02 Nov 2026 13:39:01 GMT",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores"
+          },
+          "set_cookie": [],
+          "bytes": 807,
+          "sha256": "b933eeeb1ffa52a3ab6b940947e31d4ca4ff0d3889ea07fc653915f4719620c6"
+        }
+      ]
+    },
+    {
+      "agent": "desktop",
+      "chain": [
+        {
+          "url": "http://www.pobreestudante.com.br/sistema/?utm_source=instagram&probe=a%2Fb",
+          "status": 503,
+          "headers": {
+            "Connection": "close",
+            "Cache-Control": "private, no-cache, no-store, must-revalidate, max-age=0",
+            "Pragma": "no-cache",
+            "Content-Type": "text/html",
+            "Content-Length": "807",
+            "Date": "Mon, 02 Nov 2026 13:39:01 GMT",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores"
+          },
+          "set_cookie": [],
+          "bytes": 807,
+          "sha256": "b933eeeb1ffa52a3ab6b940947e31d4ca4ff0d3889ea07fc653915f4719620c6"
+        }
+      ]
+    },
+    {
+      "agent": "desktop",
+      "chain": [
+        {
+          "url": "https://pobreestudante.com.br/",
+          "status": 200,
+          "headers": {
+            "Connection": "close",
+            "Content-Type": "text/html",
+            "Last-Modified": "Sun, 01 Nov 2026 16:33:39 GMT",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "27496",
+            "Date": "Mon, 02 Nov 2026 13:39:01 GMT",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores",
+            "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+          },
+          "set_cookie": [],
+          "bytes": 27496,
+          "sha256": "7cd916cdc06ae4c5bb0f9b9241eff737b8470f0400d1b4c8886c145b168de9e8"
+        }
+      ]
+    },
+    {
+      "agent": "desktop",
+      "chain": [
+        {
+          "url": "https://pobreestudante.com.br/sistema",
+          "status": 301,
+          "headers": {
+            "Connection": "close",
+            "Content-Type": "text/html",
+            "Content-Length": "795",
+            "Date": "Mon, 02 Nov 2026 13:39:02 GMT",
+            "Location": "https://pobreestudante.com.br/sistema/",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores",
+            "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+          },
+          "set_cookie": [],
+          "bytes": 795,
+          "sha256": "e8b101a7c7f64aad528cc734513cbeb02243c0af37930dc0f3239749cff184b6"
+        },
+        {
+          "url": "https://pobreestudante.com.br/sistema/",
+          "status": 200,
+          "headers": {
+            "Connection": "close",
+            "Content-Type": "text/html; charset=utf-8",
+            "Vary": "Cookie",
+            "Content-Length": "4551",
+            "Date": "Mon, 02 Nov 2026 13:39:02 GMT",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores",
+            "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+          },
+          "set_cookie": [
+            "session=<redacted>; Secure; HttpOnly; Path=/; SameSite=Lax"
+          ],
+          "bytes": 4551,
+          "sha256": "c880c4ba7096de0e65a83668445a8344d39ed90941661b79da7406d45289a367"
+        }
+      ]
+    },
+    {
+      "agent": "desktop",
+      "chain": [
+        {
+          "url": "https://pobreestudante.com.br/sistema/",
+          "status": 200,
+          "headers": {
+            "Connection": "close",
+            "Content-Type": "text/html; charset=utf-8",
+            "Vary": "Cookie",
+            "Content-Length": "4551",
+            "Date": "Mon, 02 Nov 2026 13:39:02 GMT",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores",
+            "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+          },
+          "set_cookie": [
+            "session=<redacted>; Secure; HttpOnly; Path=/; SameSite=Lax"
+          ],
+          "bytes": 4551,
+          "sha256": "ef9dcd6cfb757de009330f6fbbe008cf196aebb6198766bd1c75759f1562e1cc"
+        }
+      ]
+    },
+    {
+      "agent": "desktop",
+      "chain": [
+        {
+          "url": "https://pobreestudante.com.br/sistema?utm_source=instagram&probe=a%2Fb",
+          "status": 301,
+          "headers": {
+            "Connection": "close",
+            "Content-Type": "text/html",
+            "Content-Length": "795",
+            "Date": "Mon, 02 Nov 2026 13:39:02 GMT",
+            "Location": "https://pobreestudante.com.br/sistema/?utm_source=instagram&probe=a%2Fb",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores",
+            "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+          },
+          "set_cookie": [],
+          "bytes": 795,
+          "sha256": "e8b101a7c7f64aad528cc734513cbeb02243c0af37930dc0f3239749cff184b6"
+        },
+        {
+          "url": "https://pobreestudante.com.br/sistema/?utm_source=instagram&probe=a%2Fb",
+          "status": 200,
+          "headers": {
+            "Connection": "close",
+            "Content-Type": "text/html; charset=utf-8",
+            "Vary": "Cookie",
+            "Content-Length": "4551",
+            "Date": "Mon, 02 Nov 2026 13:39:02 GMT",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores",
+            "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+          },
+          "set_cookie": [
+            "session=<redacted>; Secure; HttpOnly; Path=/; SameSite=Lax"
+          ],
+          "bytes": 4551,
+          "sha256": "c30341a4efc0f9fca84ea109156e3c660783ced02a60ff2116d0b43f08f86578"
+        }
+      ]
+    },
+    {
+      "agent": "desktop",
+      "chain": [
+        {
+          "url": "https://pobreestudante.com.br/sistema/?utm_source=instagram&probe=a%2Fb",
+          "status": 200,
+          "headers": {
+            "Connection": "close",
+            "Content-Type": "text/html; charset=utf-8",
+            "Vary": "Cookie",
+            "Content-Length": "4551",
+            "Date": "Mon, 02 Nov 2026 13:39:03 GMT",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores",
+            "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+          },
+          "set_cookie": [
+            "session=<redacted>; Secure; HttpOnly; Path=/; SameSite=Lax"
+          ],
+          "bytes": 4551,
+          "sha256": "cfe633910b79d3a9f6608070eb5bec0ff0b1ed6c309fe690b42eb89d40856e53"
+        }
+      ]
+    },
+    {
+      "agent": "desktop",
+      "chain": [
+        {
+          "url": "https://www.pobreestudante.com.br/",
+          "status": 200,
+          "headers": {
+            "Connection": "close",
+            "Content-Type": "text/html",
+            "Last-Modified": "Sun, 01 Nov 2026 16:33:39 GMT",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "27496",
+            "Date": "Mon, 02 Nov 2026 13:39:03 GMT",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores",
+            "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+          },
+          "set_cookie": [],
+          "bytes": 27496,
+          "sha256": "7cd916cdc06ae4c5bb0f9b9241eff737b8470f0400d1b4c8886c145b168de9e8"
+        }
+      ]
+    },
+    {
+      "agent": "desktop",
+      "chain": [
+        {
+          "url": "https://www.pobreestudante.com.br/sistema",
+          "status": 301,
+          "headers": {
+            "Connection": "close",
+            "Content-Type": "text/html",
+            "Content-Length": "795",
+            "Date": "Mon, 02 Nov 2026 13:39:03 GMT",
+            "Location": "https://www.pobreestudante.com.br/sistema/",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores",
+            "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+          },
+          "set_cookie": [],
+          "bytes": 795,
+          "sha256": "e8b101a7c7f64aad528cc734513cbeb02243c0af37930dc0f3239749cff184b6"
+        },
+        {
+          "url": "https://www.pobreestudante.com.br/sistema/",
+          "status": 200,
+          "headers": {
+            "Connection": "close",
+            "Content-Type": "text/html; charset=utf-8",
+            "Vary": "Cookie",
+            "Content-Length": "4551",
+            "Date": "Mon, 02 Nov 2026 13:39:03 GMT",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores",
+            "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+          },
+          "set_cookie": [
+            "session=<redacted>; Secure; HttpOnly; Path=/; SameSite=Lax"
+          ],
+          "bytes": 4551,
+          "sha256": "a5059b9a9908876630c44751a9b529dd4605176a48235e440b44db1739495a02"
+        }
+      ]
+    },
+    {
+      "agent": "desktop",
+      "chain": [
+        {
+          "url": "https://www.pobreestudante.com.br/sistema/",
+          "status": 200,
+          "headers": {
+            "Connection": "close",
+            "Content-Type": "text/html; charset=utf-8",
+            "Vary": "Cookie",
+            "Content-Length": "4551",
+            "Date": "Mon, 02 Nov 2026 13:39:03 GMT",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores",
+            "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+          },
+          "set_cookie": [
+            "session=<redacted>; Secure; HttpOnly; Path=/; SameSite=Lax"
+          ],
+          "bytes": 4551,
+          "sha256": "69f6c01b4ed950e41a5eb38ef0a74c8cc254c7b10d2458f511b7a724978bea2b"
+        }
+      ]
+    },
+    {
+      "agent": "desktop",
+      "chain": [
+        {
+          "url": "https://www.pobreestudante.com.br/sistema?utm_source=instagram&probe=a%2Fb",
+          "status": 301,
+          "headers": {
+            "Connection": "close",
+            "Content-Type": "text/html",
+            "Content-Length": "795",
+            "Date": "Mon, 02 Nov 2026 13:39:04 GMT",
+            "Location": "https://www.pobreestudante.com.br/sistema/?utm_source=instagram&probe=a%2Fb",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores",
+            "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+          },
+          "set_cookie": [],
+          "bytes": 795,
+          "sha256": "e8b101a7c7f64aad528cc734513cbeb02243c0af37930dc0f3239749cff184b6"
+        },
+        {
+          "url": "https://www.pobreestudante.com.br/sistema/?utm_source=instagram&probe=a%2Fb",
+          "status": 200,
+          "headers": {
+            "Connection": "close",
+            "Content-Type": "text/html; charset=utf-8",
+            "Vary": "Cookie",
+            "Content-Length": "4551",
+            "Date": "Mon, 02 Nov 2026 13:39:04 GMT",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores",
+            "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+          },
+          "set_cookie": [
+            "session=<redacted>; Secure; HttpOnly; Path=/; SameSite=Lax"
+          ],
+          "bytes": 4551,
+          "sha256": "929f55ce012e65eea776f75b066eb24badbb0eed902f440047253c9a76a928bd"
+        }
+      ]
+    },
+    {
+      "agent": "desktop",
+      "chain": [
+        {
+          "url": "https://www.pobreestudante.com.br/sistema/?utm_source=instagram&probe=a%2Fb",
+          "status": 200,
+          "headers": {
+            "Connection": "close",
+            "Content-Type": "text/html; charset=utf-8",
+            "Vary": "Cookie",
+            "Content-Length": "4551",
+            "Date": "Mon, 02 Nov 2026 13:39:04 GMT",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores",
+            "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+          },
+          "set_cookie": [
+            "session=<redacted>; Secure; HttpOnly; Path=/; SameSite=Lax"
+          ],
+          "bytes": 4551,
+          "sha256": "9e085d4f4b38d3ac16856e4b360dece3ca0b9e6a906611ab11bf77cd93557e78"
+        }
+      ]
+    },
+    {
+      "agent": "desktop",
+      "chain": [
+        {
+          "url": "https://pobreestudante.com.br/",
+          "status": 200,
+          "headers": {
+            "Connection": "close",
+            "Content-Type": "text/html",
+            "Last-Modified": "Sun, 01 Nov 2026 16:33:39 GMT",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "27496",
+            "Date": "Mon, 02 Nov 2026 13:39:04 GMT",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores",
+            "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+          },
+          "set_cookie": [],
+          "bytes": 27496,
+          "sha256": "7cd916cdc06ae4c5bb0f9b9241eff737b8470f0400d1b4c8886c145b168de9e8"
+        }
+      ]
+    },
+    {
+      "agent": "desktop",
+      "chain": [
+        {
+          "url": "https://pobreestudante.com.br/sistema/",
+          "status": 200,
+          "headers": {
+            "Connection": "close",
+            "Content-Type": "text/html; charset=utf-8",
+            "Vary": "Cookie",
+            "Content-Length": "4551",
+            "Date": "Mon, 02 Nov 2026 13:39:05 GMT",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores",
+            "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+          },
+          "set_cookie": [
+            "session=<redacted>; Secure; HttpOnly; Path=/; SameSite=Lax"
+          ],
+          "bytes": 4551,
+          "sha256": "f0ff0aeb7861a38407e8d1e89811826402336b36318ccf91a0174e76de57cabd"
+        }
+      ]
+    },
+    {
+      "agent": "instagram_android",
+      "chain": [
+        {
+          "url": "https://pobreestudante.com.br/",
+          "status": 200,
+          "headers": {
+            "Connection": "close",
+            "Content-Type": "text/html",
+            "Last-Modified": "Sun, 01 Nov 2026 16:33:39 GMT",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "27496",
+            "Date": "Mon, 02 Nov 2026 13:39:05 GMT",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores",
+            "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+          },
+          "set_cookie": [],
+          "bytes": 27496,
+          "sha256": "7cd916cdc06ae4c5bb0f9b9241eff737b8470f0400d1b4c8886c145b168de9e8"
+        }
+      ]
+    },
+    {
+      "agent": "instagram_android",
+      "chain": [
+        {
+          "url": "https://pobreestudante.com.br/sistema/",
+          "status": 200,
+          "headers": {
+            "Connection": "close",
+            "Content-Type": "text/html; charset=utf-8",
+            "Vary": "Cookie",
+            "Content-Length": "4551",
+            "Date": "Mon, 02 Nov 2026 13:39:05 GMT",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores",
+            "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+          },
+          "set_cookie": [
+            "session=<redacted>; Secure; HttpOnly; Path=/; SameSite=Lax"
+          ],
+          "bytes": 4551,
+          "sha256": "53c749ab7b7924a3fccf2c8bf3b7410ec102967ab6a73bec39f230bc7b31857d"
+        }
+      ]
+    },
+    {
+      "agent": "instagram_ios",
+      "chain": [
+        {
+          "url": "https://pobreestudante.com.br/",
+          "status": 200,
+          "headers": {
+            "Connection": "close",
+            "Content-Type": "text/html",
+            "Last-Modified": "Sun, 01 Nov 2026 16:33:39 GMT",
+            "Accept-Ranges": "bytes",
+            "Content-Length": "27496",
+            "Date": "Mon, 02 Nov 2026 13:39:05 GMT",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores",
+            "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+          },
+          "set_cookie": [],
+          "bytes": 27496,
+          "sha256": "7cd916cdc06ae4c5bb0f9b9241eff737b8470f0400d1b4c8886c145b168de9e8"
+        }
+      ]
+    },
+    {
+      "agent": "instagram_ios",
+      "chain": [
+        {
+          "url": "https://pobreestudante.com.br/sistema/",
+          "status": 200,
+          "headers": {
+            "Connection": "close",
+            "Content-Type": "text/html; charset=utf-8",
+            "Vary": "Cookie",
+            "Content-Length": "4551",
+            "Date": "Mon, 02 Nov 2026 13:39:05 GMT",
+            "Localizacao": "Rodia - Ascenty - SP Brasil",
+            "Servidor": "NÃºcleo Brasil Servidores",
+            "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+          },
+          "set_cookie": [
+            "session=<redacted>; Secure; HttpOnly; Path=/; SameSite=Lax"
+          ],
+          "bytes": 4551,
+          "sha256": "d728717a05e1d8ed174d33aef42e9903713c4348f36d497eba401d32319f659d"
+        }
+      ]
+    }
+  ],
+  "session_reuse": [
+    [
+      {
+        "url": "https://pobreestudante.com.br/sistema/",
+        "status": 200,
+        "headers": {
+          "Connection": "close",
+          "Content-Type": "text/html; charset=utf-8",
+          "Vary": "Cookie",
+          "Content-Length": "4551",
+          "Date": "Mon, 02 Nov 2026 13:39:06 GMT",
+          "Localizacao": "Rodia - Ascenty - SP Brasil",
+          "Servidor": "NÃºcleo Brasil Servidores",
+          "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+        },
+        "set_cookie": [
+          "session=<redacted>; Secure; HttpOnly; Path=/; SameSite=Lax"
+        ],
+        "bytes": 4551,
+        "sha256": "355f6f1d57add92958a02199ed94c0d7bb30c65b86e12530cddd105d45aadcba"
+      }
+    ],
+    [
+      {
+        "url": "https://pobreestudante.com.br/sistema/",
+        "status": 200,
+        "headers": {
+          "Connection": "close",
+          "Content-Type": "text/html; charset=utf-8",
+          "Vary": "Cookie",
+          "Content-Length": "4551",
+          "Date": "Mon, 02 Nov 2026 13:39:06 GMT",
+          "Localizacao": "Rodia - Ascenty - SP Brasil",
+          "Servidor": "NÃºcleo Brasil Servidores",
+          "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+        },
+        "set_cookie": [],
+        "bytes": 4551,
+        "sha256": "355f6f1d57add92958a02199ed94c0d7bb30c65b86e12530cddd105d45aadcba"
+      }
+    ],
+    [
+      {
+        "url": "https://pobreestudante.com.br/sistema/",
+        "status": 200,
+        "headers": {
+          "Connection": "close",
+          "Content-Type": "text/html; charset=utf-8",
+          "Vary": "Cookie",
+          "Content-Length": "4551",
+          "Date": "Mon, 02 Nov 2026 13:39:06 GMT",
+          "Localizacao": "Rodia - Ascenty - SP Brasil",
+          "Servidor": "NÃºcleo Brasil Servidores",
+          "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+        },
+        "set_cookie": [],
+        "bytes": 4551,
+        "sha256": "355f6f1d57add92958a02199ed94c0d7bb30c65b86e12530cddd105d45aadcba"
+      }
+    ],
+    [
+      {
+        "url": "https://pobreestudante.com.br/sistema/",
+        "status": 200,
+        "headers": {
+          "Connection": "close",
+          "Content-Type": "text/html; charset=utf-8",
+          "Vary": "Cookie",
+          "Content-Length": "4551",
+          "Date": "Mon, 02 Nov 2026 13:39:06 GMT",
+          "Localizacao": "Rodia - Ascenty - SP Brasil",
+          "Servidor": "NÃºcleo Brasil Servidores",
+          "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+        },
+        "set_cookie": [],
+        "bytes": 4551,
+        "sha256": "355f6f1d57add92958a02199ed94c0d7bb30c65b86e12530cddd105d45aadcba"
+      }
+    ],
+    [
+      {
+        "url": "https://pobreestudante.com.br/sistema/",
+        "status": 200,
+        "headers": {
+          "Connection": "close",
+          "Content-Type": "text/html; charset=utf-8",
+          "Vary": "Cookie",
+          "Content-Length": "4551",
+          "Date": "Mon, 02 Nov 2026 13:39:07 GMT",
+          "Localizacao": "Rodia - Ascenty - SP Brasil",
+          "Servidor": "NÃºcleo Brasil Servidores",
+          "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+        },
+        "set_cookie": [],
+        "bytes": 4551,
+        "sha256": "355f6f1d57add92958a02199ed94c0d7bb30c65b86e12530cddd105d45aadcba"
+      }
+    ],
+    [
+      {
+        "url": "https://pobreestudante.com.br/sistema/",
+        "status": 200,
+        "headers": {
+          "Connection": "close",
+          "Content-Type": "text/html; charset=utf-8",
+          "Vary": "Cookie",
+          "Content-Length": "4551",
+          "Date": "Mon, 02 Nov 2026 13:39:07 GMT",
+          "Localizacao": "Rodia - Ascenty - SP Brasil",
+          "Servidor": "NÃºcleo Brasil Servidores",
+          "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+        },
+        "set_cookie": [],
+        "bytes": 4551,
+        "sha256": "355f6f1d57add92958a02199ed94c0d7bb30c65b86e12530cddd105d45aadcba"
+      }
+    ]
+  ],
+  "routes": {
+    "/sistema/login": [
+      {
+        "url": "https://pobreestudante.com.br/sistema/login",
+        "status": 200,
+        "headers": {
+          "Connection": "close",
+          "Content-Type": "text/html; charset=utf-8",
+          "Vary": "Cookie",
+          "Content-Length": "4551",
+          "Date": "Mon, 02 Nov 2026 13:39:07 GMT",
+          "Localizacao": "Rodia - Ascenty - SP Brasil",
+          "Servidor": "NÃºcleo Brasil Servidores",
+          "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+        },
+        "set_cookie": [
+          "session=<redacted>; Secure; HttpOnly; Path=/; SameSite=Lax"
+        ],
+        "bytes": 4551,
+        "sha256": "46a8fc68991164eafc1bb2924180e3f4f78bcb4f30b90c6a686c80d07454ac8b"
+      }
+    ],
+    "/sistema/criar-usuario": [
+      {
+        "url": "https://pobreestudante.com.br/sistema/criar-usuario",
+        "status": 200,
+        "headers": {
+          "Connection": "close",
+          "Content-Type": "text/html; charset=utf-8",
+          "Vary": "Cookie",
+          "Content-Length": "4003",
+          "Date": "Mon, 02 Nov 2026 13:39:07 GMT",
+          "Localizacao": "Rodia - Ascenty - SP Brasil",
+          "Servidor": "NÃºcleo Brasil Servidores",
+          "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+        },
+        "set_cookie": [
+          "session=<redacted>; Secure; HttpOnly; Path=/; SameSite=Lax"
+        ],
+        "bytes": 4003,
+        "sha256": "398d8aa586a31141d100e66f0c19094930662bdd0a8f2af987ec79d57b62dbd3"
+      }
+    ],
+    "/sistema/recuperar-senha": [
+      {
+        "url": "https://pobreestudante.com.br/sistema/recuperar-senha",
+        "status": 200,
+        "headers": {
+          "Connection": "close",
+          "Content-Type": "text/html; charset=utf-8",
+          "Vary": "Cookie",
+          "Content-Length": "3439",
+          "Date": "Mon, 02 Nov 2026 13:39:07 GMT",
+          "Localizacao": "Rodia - Ascenty - SP Brasil",
+          "Servidor": "NÃºcleo Brasil Servidores",
+          "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+        },
+        "set_cookie": [
+          "session=<redacted>; Secure; HttpOnly; Path=/; SameSite=Lax"
+        ],
+        "bytes": 3439,
+        "sha256": "e4917884364a037033fcb30694f193cd860cbbe1c2dd17c4dc2d54e252807e8f"
+      }
+    ],
+    "/sistema/static/css/styles.css": [
+      {
+        "url": "https://pobreestudante.com.br/sistema/static/css/styles.css",
+        "status": 200,
+        "headers": {
+          "Connection": "close",
+          "Cache-Control": "public, max-age=604800",
+          "Expires": "Mon, 09 Nov 2026 13:39:08 GMT",
+          "Content-Type": "text/css",
+          "Last-Modified": "Sun, 01 Nov 2026 12:58:17 GMT",
+          "Accept-Ranges": "bytes",
+          "Content-Length": "11968",
+          "Date": "Mon, 02 Nov 2026 13:39:08 GMT",
+          "Localizacao": "Rodia - Ascenty - SP Brasil",
+          "Servidor": "NÃºcleo Brasil Servidores",
+          "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+        },
+        "set_cookie": [],
+        "bytes": 11968,
+        "sha256": "99f8a9d898cf1714130d0756bd9e664c0dfd971d09d09172db97a39db54588e7"
+      }
+    ],
+    "/sistema/static/css/brand.css?v=20261031d": [
+      {
+        "url": "https://pobreestudante.com.br/sistema/static/css/brand.css?v=20261031d",
+        "status": 200,
+        "headers": {
+          "Connection": "close",
+          "Cache-Control": "public, max-age=604800",
+          "Expires": "Mon, 09 Nov 2026 13:39:08 GMT",
+          "Content-Type": "text/css",
+          "Last-Modified": "Sun, 01 Nov 2026 12:58:17 GMT",
+          "Accept-Ranges": "bytes",
+          "Content-Length": "13515",
+          "Date": "Mon, 02 Nov 2026 13:39:08 GMT",
+          "Localizacao": "Rodia - Ascenty - SP Brasil",
+          "Servidor": "NÃºcleo Brasil Servidores",
+          "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+        },
+        "set_cookie": [],
+        "bytes": 13515,
+        "sha256": "23be5e9aec8b06340be3d07fdb02b210cde8277ff6b5a211392c08e40f124176"
+      }
+    ],
+    "/sistema/static/imagens/logo.png": [
+      {
+        "url": "https://pobreestudante.com.br/sistema/static/imagens/logo.png",
+        "status": 200,
+        "headers": {
+          "Connection": "close",
+          "Cache-Control": "public, max-age=604800",
+          "Expires": "Mon, 09 Nov 2026 13:39:08 GMT",
+          "Content-Type": "image/png",
+          "Last-Modified": "Sun, 01 Nov 2026 12:58:17 GMT",
+          "Accept-Ranges": "bytes",
+          "Content-Length": "768745",
+          "Date": "Mon, 02 Nov 2026 13:39:08 GMT",
+          "Localizacao": "Rodia - Ascenty - SP Brasil",
+          "Servidor": "NÃºcleo Brasil Servidores",
+          "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+        },
+        "set_cookie": [],
+        "bytes": 768745,
+        "sha256": "1e818886ec17f386b7473bf42c0c096f45034f2caa18005ffb252c260ca2a56d"
+      }
+    ]
+  }
+}
